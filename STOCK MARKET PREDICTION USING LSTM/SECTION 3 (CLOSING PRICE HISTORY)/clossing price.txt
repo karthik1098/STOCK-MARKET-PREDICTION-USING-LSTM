@@ -1,0 +1,4 @@
+df["Date"]=pd.to_datetime(df.Date,format="%d-%m-%Y")
+df.index=df['Date']
+plt.figure(figsize=(16,8))
+plt.plot(df["Close"],label='Close Price history')
